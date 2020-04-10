@@ -2,7 +2,7 @@ var express = require('express')
 var app = express()
     //var axios = require('axios');
 var port = 3001
-app.use(express.static(__dirname + '/counter-app/public'));
+app.use(express.static(__dirname + '/public'));
 var num = 0;
 
 app.post('/increment', (req, res) => {
